@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7239E5B">
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewRoletinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadingProgressBar"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/roletinha" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewRoletinha"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textViewRecomendacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FBFBFB"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewMensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRecomendacao"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FBFBFB"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="395dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Digite seu e-mail"
+        android:inputType="textEmailAddress" />
+
+</RelativeLayout>

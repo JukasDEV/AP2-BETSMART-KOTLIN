@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="loadingProgressBar" type="id" />
+    <item name="editTextEmail" type="id" />
+    <item name="textViewMensagem" type="id" />
+</resources>

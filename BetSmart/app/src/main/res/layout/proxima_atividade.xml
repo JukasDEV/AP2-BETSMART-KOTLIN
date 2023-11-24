@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7239E5B">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="#3cb371 "
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="644dp"
+            android:layout_centerInParent="true"
+            android:padding="30dp">
+
+            <!-- TextView da pergunta com background color -->
+            <TextView
+                android:id="@+id/tvPergunta"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="60dp"
+                android:background="#f9f9f9 "
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Quanto Pretende Investir? (Lembrando só aposte o que não fará falta)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="26sp" />  <!-- Cor do background -->
+
+            <!-- Seus botões permanecem da mesma forma -->
+
+            <Button
+                android:id="@+id/btnOpcao1"
+                android:layout_width="1000dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/tvPergunta"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#3c3c3c "
+                android:text="100 - 200 Reais"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnOpcao2"
+                android:layout_width="1000dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/btnOpcao1"
+                android:layout_marginTop="23dp"
+                android:backgroundTint="#3c3c3c "
+                android:text="500 - 1000 Reais"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnOpcao3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnOpcao3"
+                android:layout_marginTop="122dp"
+                android:backgroundTint="#3c3c3c "
+                android:text="Não, Estou procurando Conhecimento antes"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                tools:ignore="NotSibling" />
+
+            <Button
+                android:id="@+id/btnOpcao5"
+                android:layout_width="1000dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/btnOpcao2"
+                android:layout_marginTop="33dp"
+                android:backgroundTint="#3c3c3c "
+                android:text="1000- 2000 Reais"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
